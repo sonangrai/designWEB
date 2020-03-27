@@ -1,0 +1,69 @@
+body{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	align-items: center;
+    justify-content: center;
+    background: #ff0f94;
+    display: flex;
+}
+.panel {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3% 3% 1%;
+    background: #fff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    -webkit-box-shadow: 0px 0px 12px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 12px -6px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 12px -6px rgba(0,0,0,0.75);
+}
+.icon{
+	width: 20%;
+}
+.gesture {
+    width: 100%;
+    padding-top: 6%;
+}
+.gesture span{
+	display: block;
+    height: 6px;
+    background: #eee;
+    margin-top: 50px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after{
+	margin-left: 0;
+}
+.icon [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, .icon [class*=" flaticon-"]:after {
+    color: #9f9c9c;
+    margin: 0 30px;
+    font-size: 40px;
+}
+.icon i:before{
+	transition: 0.3s;
+}
+.compass.active .flaticon-compass:before,.compass:hover .flaticon-compass:before{
+	color: #ff0f94;
+	cursor: pointer;
+}
+.messenger.active .flaticon-messenger:before,.messenger:hover .flaticon-messenger:before{
+	color: #1bf9ef;
+	cursor: pointer;
+}
+.bell.active .flaticon-bell:before,.bell:hover .flaticon-bell:before{
+	color: #2571fb;
+	cursor: pointer;
+}
+.paper.active .flaticon-paper:before,.paper:hover .flaticon-paper:before{
+	color: #18dada;
+	cursor: pointer;
+}
+.user.active .flaticon-user:before,.user:hover .flaticon-user:before{
+	color: #5b12d0;
+	cursor: pointer;
+}
