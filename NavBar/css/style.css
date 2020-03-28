@@ -60,7 +60,7 @@ body{
 	cursor: pointer;
 }
 .paper.active .flaticon-paper:before,.paper:hover .flaticon-paper:before{
-	color: #18dada;
+	color: #f3ec08;
 	cursor: pointer;
 }
 .user.active .flaticon-user:before,.user:hover .flaticon-user:before{
