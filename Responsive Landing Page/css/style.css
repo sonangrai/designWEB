@@ -167,6 +167,9 @@ a.nav-link{
 	a.nav-link{
 		font-size: 29px
 	}
+	.card-columns {
+	    column-count: 2;
+	}
 }
 @media screen and (max-width: 468px){
 	.hero-container h5{
@@ -175,5 +178,18 @@ a.nav-link{
 	.hero:before{
 		width: 10rem;
 		height: 10rem;
+	}
+	.logo a {
+	    font-size: 20px;
+	}
+	.hero-container img {
+	    position: absolute;
+	    bottom: 0;
+	    width: 50%;
+	    left: 50%;
+	    transform: translateX(-50%);
+	}
+	.card-columns {
+	    column-count: 1;
 	}
 }
