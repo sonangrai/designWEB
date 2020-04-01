@@ -3,85 +3,93 @@
 }
 .logo a{
 	text-decoration: none;
+	font-size: 19px;
 	color: #fff;
-	font-size: 18px;
 }
 .hero{
-    height: 100vh;
-	background-color: #616A64;
-    position: relative;
+	height: 100vh;
+	background-color: #616a64;
+	position: relative;
 }
-.menu {
-    float: right;
+.menu{
+	float: right;
 }
-a.nav-link {
-    color: #fff;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    font-size: 16px;
+a.nav-link{
+	color: #fff;
+	text-decoration: none;;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	font-size: 16px;
 }
-.hero-container {
-    background: #616a64;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.hero-container{
+	background-color: #616a64;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.hero-container img {
-    position: absolute;
-    bottom: 0;
+.hero-container img{
+	position: absolute;
+	bottom: 0;
 }
-.hero-container h5 {
-    position: absolute;
-    font-size: 8rem;
-    text-transform: uppercase;
-    color: #f9f3f338;
-    font-family: 'Roboto', sans-serif;
-    top: 50%;
-    transform: translateY(-50%);
+.hero-container h5{
+	position: absolute;
+	font-size: 8rem;
+	text-transform: uppercase;
+	color: #f9f3f338;
+	font-family: 'Roboto', sans-serif;
+	top: 50%;
+	transform: translateY(-50%);
 }
-section.hero:before {
-    position: absolute;
-    content: "";
-    height: 30rem;
-    width: 30rem;
-    background: #f9f3f369;
-    border-radius: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    top: 50%;
+.hero:before{
+	position: absolute;
+	content: "";
+	height: 30rem;
+	width: 30rem;
+	background-color: #f9f3f369;
+	border-radius: 50%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+.navbar-toggler:focus{
+	outline: none;
+}
+.navbar-toggler span{
+	color: #fff;
 }
 
-
-
+/*Now responsive css*/
 @media screen and (max-width: 968px){
-	.menu span::before {
-	    color: #fff;
-	    margin: 0;
-	    font-size: 30px;
+	.menu span::before{
+		color: #fff;
+		margin: 0;
+		font-size: 30px;
 	}
-	.hero-container h5{
-		font-size: 6rem;
-	}
-	.hero-container img {
-	    width: 50%;
-	}
-}
-@media screen and (max-width: 968px){
 	.hero-container h5{
 		font-size: 4rem;
 	}
-	section.hero:before {
-	    height: 20rem;
-	    width: 20rem;
+	.hero-contianer img{
+		width: 50%;
+	}
+	.hero:before{
+		height: 20rem;
+		width: 20rem;
+	}
+}
+@media screen and (max-width: 768px){
+	.logo a{
+		font-size: 29px;
+	}
+	a.nav-link{
+		font-size: 29px
 	}
 }
 @media screen and (max-width: 468px){
 	.hero-container h5{
 		font-size: 2rem;
-	}	
-	section.hero:before {
-	    height: 10rem;
-	    width: 10rem;
+	}
+	.hero:before{
+		width: 10rem;
+		height: 10rem;
 	}
 }
