@@ -58,6 +58,90 @@ a.nav-link{
 	color: #fff;
 }
 
+
+.intro{
+	padding: 3% 0;
+	background-color: #000;
+}
+.intro-description{
+	padding: 10% 0;
+}
+.intro-description h6{
+	color: #fff;
+	font-family: 'Averia Serif Libre', cursive;
+	font-size: 3rem;
+	margin-bottom: 3rem;
+}
+.intro-description p{
+	color: #ccc;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+}
+.intro-image img{
+	width: 100%;
+}
+.project{
+	padding: 3% 0;
+	background-color: #000;
+}
+.white{
+	color: #fff;
+}
+.title h6{
+	text-align: center;
+	font-family: 'Averia Serif Libre', cursive;
+	font-size: 3rem;
+	margin-bottom: 3rem;
+}
+.proj-row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.proj-item{
+	font-family: 'Nunito', sans-serif;
+	font-weight: 600;
+	color: #fff;
+	display: inline-block;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.proj-item img{
+	width: 100%;
+}
+.proj-item h6 {
+	font-weight: 600;
+    font-size: 24px;
+    margin: 3% 0;
+    text-transform: uppercase;
+}
+.proj-item i::before {
+    margin: 0;
+ }
+ .proj-item span {
+    font-size: 20px;
+}
+.button{
+	padding: 3% 0;
+}
+.viewbtn{
+	display: block;
+	width: 20%;
+	margin: 0 auto;
+	background-color: transparent;
+	border: 2px solid #fff;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	padding: 1%;
+}
+.viewbtn:hover{
+	color: #fff;
+	text-decoration: none;
+}
+
+
+
+
 /*Now responsive css*/
 @media screen and (max-width: 968px){
 	.menu span::before{
