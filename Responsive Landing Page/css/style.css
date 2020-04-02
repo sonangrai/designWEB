@@ -1,5 +1,6 @@
 .logo h1{
 	font-family: 'Monoton', cursive;
+	font-size: unset;
 }
 .logo a{
 	text-decoration: none;
@@ -140,6 +141,80 @@ a.nav-link{
 }
 
 
+.feature{
+	padding: 3% 0;
+}
+.service-item{
+	font-family: 'Nunito', sans-serif;
+	margin: 3% 0;
+}
+.service-item span {
+    font-weight: 600;
+}
+.service-item i::before {
+    font-size: 30px;
+    margin: 0;
+}
+.service-item span {
+    font-size: 24px;
+}
+.service-item p {
+    font-size: 20px;
+}
+.review{
+	padding: 3% 0 8%;
+	background-color: #000;
+}
+.review-item{
+	font-family: 'Nunito', sans-serif;
+	padding: 0 4%;
+	position: relative;
+}
+.review-item p {
+    padding: 14%;
+    border: 1px solid #303342;
+    color: #fff;
+    font-size: 16px;
+}
+.identity {
+    position: absolute;
+    bottom: -38%;
+    left: -6%;
+    color: #fff;
+}
+.identity h6 {
+    margin-top: 1rem;
+}
+.footer{
+	padding: 3% 0;
+	font-family: 'Nunito', sans-serif;
+	background-color: #616A64;
+}
+.footer-item{
+	color: #fff;
+}
+.footer-item h6 {
+    font-size: 22px;
+	font-family: 'Averia Serif Libre', cursive;
+}
+.footer-item ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.footer-item input {
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #fff;
+}
+.footer-item input:focus{
+	outline: none;
+}
+input::placeholder{
+	color: #fff;
+}
+
 
 
 /*Now responsive css*/
@@ -158,6 +233,12 @@ a.nav-link{
 	.hero:before{
 		height: 20rem;
 		width: 20rem;
+	}
+	.review-item {
+	    margin: 10px 0;
+	}
+	.identity{
+		position: unset;
 	}
 }
 @media screen and (max-width: 768px){
