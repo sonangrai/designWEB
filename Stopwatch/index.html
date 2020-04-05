@@ -26,6 +26,9 @@
   $('#sw-go').click(function(){
     $(this).find('i').toggleClass('fa-play fa-pause')
   });
+  $('#sw-rst').click(function(){
+    $('#sw-go').find('i').removeClass('fa-pause').addClass('fa-play')
+  });
 
 
   var sw = {
