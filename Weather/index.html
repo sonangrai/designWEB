@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="container">
+  <div class="card">
+      <h2><i class="fa fa-map-marker"></i> <span id="location"></span></h2>
+      <h6 id="weather"></h6>
+      <h4><span id="temp"></span><sup>o</sup>C</h4>
+      <img id="icon" src="">
+      <button onClick="window.location.reload();" class="refresh"><i class="fa fa-refresh"></i></button>
+  </div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script type="text/javascript">
+link = "https://api.openweathermap.org/data/2.5/weather?q=Kathmandu&appid=bf8d15a80c89aa4f4c82ad6cbb3f5ac5";
+var request = new XMLHttpRequest();
+request.open('GET',link,true);
+request.onload = function(){
+ var obj = JSON.parse(this.response);
+ console.log(obj);
+ 
+ document.getElementById('weather').innerHTML = obj.weather[0].description;
+ document.getElementById('location').innerHTML = obj.name;
+ document.getElementById('temp').innerHTML = obj.main.temp - 273.15;
+ document.getElementById('icon').src = "http://openweathermap.org/img/w/" + obj.weather[0].icon + ".png";
+
+ if (request.status >= 200 && request.status < 400) {
+ var temp = obj.main.temp;
+ }
+ else{
+  console.log("The city doesn't exist! Kindly check");
+ }
+}
+request.send();
+</script>
+</html>
