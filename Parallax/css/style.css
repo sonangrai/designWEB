@@ -1,0 +1,24 @@
+:root {
+  --main-color: #D3426C;
+}
+body{
+	background: var(--main-color);
+	height: 100vh;
+	color: #fff;
+}
+.parallax-container{
+	height: 100vh;
+}
+.paragraph {
+    font-size: 2rem;
+    padding: 3%;
+    text-align: justify;
+}
+span.counter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 8rem;
+    font-weight: 600;
+}
