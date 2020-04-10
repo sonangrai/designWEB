@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.thermo {
+  border-radius: 55px;
+  background: #ffffff;
+  box-shadow: inset 16px 16px 32px #e6e6e6, inset -16px -16px 32px #ffffff;
+  height: 50vh;
+  width: 6vw;
+  position: relative;
+  overflow: hidden;
+}
+@keyframes rise {
+  from {
+    height: 0;
+    border-radius: 0 0 55px 55px;
+  }
+  to {
+    border-radius: 55px;
+    height: 100%;
+  }
+}
+.mercury {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  border-radius: 55px;
+  background: linear-gradient(to top, #fb7740, red);
+  width: 100%;
+  animation-name: rise;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+}
