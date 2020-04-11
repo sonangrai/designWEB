@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #808080;
+  font-family: sans-serif;
+}
+.container {
+  width: 50%;
+  color: #fff;
+}
+.bar {
+  border-radius: 12px;
+  background: #808080;
+  box-shadow: 5px 5px 10px #6d6d6d, -5px -5px 10px #939393;
+  padding: 20px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.answer {
+  color: #ccc;
+  display: none;
+  padding: 20px;
+  border-radius: 12px;
+  background: #808080;
+  box-shadow: inset 5px 5px 10px #6d6d6d, inset -5px -5px 10px #939393;
+}
