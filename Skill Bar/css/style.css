@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(145deg, #fa6565, #d35555);
+  font-family: sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+.bar {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #fa6565, #d35555);
+  box-shadow: 5px 5px 10px #c75050, -5px -5px 10px #ff6c6c,
+    inset 5px 5px 10px #c75050, inset -5px -5px 10px #ff6c6c;
+  width: 100%;
+  height: 26px;
+  position: relative;
+}
+.box {
+  width: 600px;
+  height: 68px;
+}
+.bar:before {
+  position: absolute;
+  content: "";
+  left: 6px;
+  top: 5px;
+  background: #fff;
+  height: 54%;
+  border-radius: 55px;
+}
+#html:before {
+  width: 90%;
+}
+#css:before {
+  width: 80%;
+}
+#js:before {
+  width: 70%;
+}
