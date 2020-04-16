@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+a{
+  color: #fff;
+  text-decoration: none;
+}
+body{
+  background-image: url(https://cdn.pixabay.com/photo/2020/03/24/16/17/mask-4964590_1280.png);
+  background-repeat: repeat-y;
+  background-size: 100%; 
+  display: flex;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.nav {
+  display: flex;
+}
+.logo {
+    width: 20%;
+}
+.logo h1 {
+    font-size: 1.8rem;
+}
+.mainmenu{
+  width: 80%;
+}
+.mainmenu ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+.mainmenu ul li{
+  padding: 2rem;
+}
+.mainmenu ul li {
+    padding: 10px 30px;
+    font-size: 18px;
+}
+.mobilemenu{
+  display: none;
+}
+@media screen and (max-width: 1200px){
+  .mainmenu ul li {
+    padding: 10px 12px;
+  }
+}
+@media screen and (max-width: 900px){
+  .mainmenu{
+    display: none;
+  }
+  .mobilemenu {
+    display: block;
+    width: 50%;
+    text-align: right;
+  }
+  .logo {
+     width: 50%;
+  }
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #be8f4e;
+  transition: 0.5s;
+}
+.mobilemenu span {
+    color: #fff;
+    line-height: 80px;
+}
+.sidenav ul {
+    text-align: center;
+    padding: 0;
+    list-style: none;
+}
+.sidenav ul li {
+    padding: 8px;
+    font-size: 1.5rem;
+}
+a.closebtn {
+    text-align: right;
+    font-size: 2rem;
+    margin: 20px;
+}

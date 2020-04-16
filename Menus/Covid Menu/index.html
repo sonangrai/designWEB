@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Skil Bar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <div class="logo">
+          <a href="#!"><h1>COVID-19</h1></a>
+        </div>
+        <div class="mainmenu">
+          <ul>
+            <li><a href="#!"><i class="fa fa-home"></i></a></li>
+            <li><a href="#!">About</a></li>
+            <li><a href="#!">Symptoms</a></li>
+            <li><a href="#!">Protection</a></li>
+            <li><a href="#!">Prevention</a></li>
+            <li><a href="#!">Faqs</a></li>
+            <li><a href="#!">Udpates</a></li>
+          </ul>
+        </div>
+        <div class="mobilemenu">
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          <div  id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul>
+              <li><a href="#!"><i class="fa fa-home"></i></a></li>
+              <li><a href="#!">About</a></li>
+              <li><a href="#!">Symptoms</a></li>
+              <li><a href="#!">Protection</a></li>
+              <li><a href="#!">Prevention</a></li>
+              <li><a href="#!">Faqs</a></li>
+              <li><a href="#!">Udpates</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</html>
