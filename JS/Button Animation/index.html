@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Button Animation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box" onclick="trigger()">
+        <i class="fa fa-long-arrow-up" id="icon"></i>
+        <span id="text">Activate</span>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  function trigger() {
+    document.getElementById("text").innerHTML = "Loading";
+    document.getElementById("icon").style.animation = "roll infinite 2s";
+    setTimeout(function () {
+      document.getElementById("text").innerHTML = "Done";
+      document.getElementById("icon").classList.remove("fa-long-arrow-up");
+      document.getElementById("icon").classList.add("fa-check");
+      document.getElementById("box").style.background = "#3cc43c";
+      document.getElementById("icon").style.animation = "unset";
+      document.getElementById("box").style["boxShadow"] =
+        " 5px 5px 11px #33a733";
+    }, 2000);
+  }
+</script>

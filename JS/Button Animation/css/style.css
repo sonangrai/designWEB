@@ -1,0 +1,45 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  color: #fff;
+  overflow: hidden;
+  background: #2949f0;
+}
+.box {
+  cursor: pointer;
+  width: 186px;
+  height: 60px;
+  border-radius: 24px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  background: #2949f0;
+  box-shadow: 5px 5px 11px #233ecc, -5px -5px 11px #2f54ff;
+}
+.box i {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin: 0 4px;
+  font-size: 14px;
+}
+.box span {
+  font-size: 24px;
+}
+@keyframes roll {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
