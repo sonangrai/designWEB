@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Righteous&display=swap');
+body{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+.flexer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+section{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-color: #51b2f1c2;
+  background-size: 100%;
+}
+section.first{
+  background-image: url(https://cdn.pixabay.com/photo/2018/03/26/14/07/space-3262811_1280.jpg);
+}
+.title {
+  font-family: 'Righteous', cursive;
+  text-align: center;
+  height: 70vh;
+  background: #2663a938;
+}
+.title h1{
+  font-size: 3rem;
+}
+.banner {
+    font-size: 10rem;
+    font-weight: 700;
+}
+section.third{
+  background-image: url(https://cdn.pixabay.com/photo/2017/06/24/20/38/winter-2438791_1280.jpg);
+}
+.half {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.filled {
+    font-size: 10rem;
+    color: transparent;
+    background: #fff;
+}
+.simple {
+    font-size: 10rem;
+}
+.filled h2 {
+    color: #afafaf;
+}
+.fourth .container , .fifth .container{
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    background: #7BC4F4;
+    box-shadow: 5px 5px 10px #69a7cf, -5px -5px 10px #8de1ff;
+    width: 300px;
+    height: 300px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    border-radius: 50%;
+  }
+section.fifth{
+  background-image: url(https://cdn.pixabay.com/photo/2017/04/24/09/25/horse-2255876_1280.jpg);
+}
