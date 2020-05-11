@@ -1,0 +1,35 @@
+body{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.kham {
+    width: 500px;
+    height: 300px;
+    background: red;
+    border-radius: 18px;
+    position: relative;
+}
+.kham:before {
+    content: "";
+    position: absolute;
+    border-bottom: 120px solid transparent;
+    border-top: 120px solid #ECEFF1;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.kham:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    border-bottom: 120px solid #CFD8DC;
+    border-top: 120px solid transparent;
+    border-left: 200px solid #fff;
+    border-right: 200px solid #fff;
+    left: 50%;
+    transform: translateX(-50%);
+}
