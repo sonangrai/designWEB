@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+  background-color: #3f3fffab;
+  background-blend-mode: overlay;
+  overflow: hidden;
+  background-image: url(https://cdn.pixabay.com/photo/2020/05/24/09/26/rain-5213306_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
+}
+.card {
+  color: #fff;
+}
+.card ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.card button {
+  background: red;
+  border: 0;
+  width: 80px;
+  height: 45px;
+  margin-right: 10px;
+  color: #fff;
+  font-weight: 900;
+  font-size: 1rem;
+  cursor: pointer;
+}
