@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiple Checkboxes</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="checkbox-cont">
+      <div class="checkbox-item">
+        <input
+          type="checkbox"
+          id="all"
+          name="library"
+          value="all"
+          onclick="toggle(this)"
+        />
+        <label for="all"> All</label>
+      </div>
+      <div class="checkbox-item">
+        <input
+          type="checkbox"
+          id="angular"
+          name="library"
+          value="angular"
+          onclick="check(this)"
+        />
+        <label for="angular"> Angular</label>
+      </div>
+      <div class="checkbox-item">
+        <input
+          type="checkbox"
+          id="react"
+          name="library"
+          value="react"
+          onclick="check(this)"
+        />
+        <label for="react"> React</label>
+      </div>
+      <div class="checkbox-item">
+        <input
+          type="checkbox"
+          id="vue"
+          name="library"
+          value="vue"
+          onclick="check(this)"
+        />
+        <label for="vue"> Vue</label>
+      </div>
+    </div>
+  </body>
+
+  <script src="./main.js"></script>
+</html>

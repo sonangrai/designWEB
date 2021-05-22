@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #787878;
+}
+
+.checkbox-cont {
+  display: flex;
+  align-items: center;
+  .checkbox-item {
+    margin: 0 1em;
+    input {
+      display: none;
+      &:checked ~ label {
+        &:after {
+          content: "\f00c";
+          font-family: FontAwesome;
+          background-color: #e83f6f;
+          color: #fff;
+          border-color: #fff;
+        }
+      }
+    }
+    label {
+      position: relative;
+      padding-left: 2em;
+      cursor: pointer;
+      color: #fff;
+      &:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 1em;
+        height: 1em;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        transition: 0.3s ease;
+      }
+    }
+  }
+}
