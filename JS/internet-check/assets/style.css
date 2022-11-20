@@ -1,0 +1,27 @@
+body {
+  font-family: monospace;
+  margin: 0;
+}
+
+.header {
+  text-align: center;
+}
+
+.header .internet {
+  background-color: green;
+  font-size: 18px;
+  color: #fff;
+  padding: 10px;
+}
+
+.internet.offline {
+  background-color: red;
+}
+
+.sample_site {
+  width: 100vw;
+}
+
+.sample_site img {
+  width: 100%;
+}
